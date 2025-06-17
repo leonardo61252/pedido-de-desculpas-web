@@ -37,8 +37,7 @@
         </div>
 
         <div id="step5" class="step">
-           <!-- Botão será adicionado dinamicamente -->
-        <div class="hearts-container"></div>
+            <div class="hearts-container"></div>
         </div>
 
         <div id="result" class="step">
@@ -49,5 +48,18 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script>
+        // Função para preencher os campos com os dados
+        function preencherCampos() {
+            document.getElementById('nome').value = 'Leonardo';
+            document.getElementById('nomeMulher').value = 'Mariana';
+            document.getElementById('motivo').value = 'Estou triste porque discutimos e não quero que isso nos afaste.';
+            document.getElementById('sentimentos').value = 'Me sinto culpado e com saudades dos nossos momentos felizes.';
+        }
+
+        // Chama a função para preencher os campos ao carregar a página
+        window.onload = preencherCampos;
+    </script>
 </body>
 </html>
+
